@@ -1,0 +1,380 @@
+/*body{
+   
+   background-color: white;
+  background-size: cover;
+ 
+     
+    
+    
+}
+header{
+    background-color:#1e90ff;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.logo img{
+    
+   
+    background-image: url(image.png);
+    background-color: transparent;
+    height: 70px;
+}  
+navbar{
+    display: flex;
+    gap: 20px;
+    color:white ;
+}
+.mainContent{
+    display: flex;
+    align-items: center;
+}
+section{
+    margin-top: 3%;
+    padding: 30px;
+    width: 50%;
+    
+}
+section h1{
+  padding-left: 20%;
+  font-family: sans-serif;
+  font-size: xx-large;
+  font-style: italic;
+    
+}
+section p{
+  
+    width: 50%;
+    color: #000000;
+    font-family: sans-serif;
+    font-size: larger;
+    font: bold;
+    margin-top: 2%;
+    padding-left: 20%;
+}
+section button{
+    background-color:#1e90ff;
+    color: white;
+    font: bold;
+    font-size: larger;
+    margin-top: 2%;
+    border-radius: 10px;
+    animation: spin 1s linear;
+ 
+    
+}
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.buttons{
+    display: flex;
+    gap: 20px;
+    padding-left: 15%;
+    
+    
+}
+.image img{
+     height: 90vh;
+    background-size: cover ;
+    margin-top: 3%;
+    padding: 30px;
+    background-size: cover;
+  
+}*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header Section */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4CAF50;
+    padding: 15px 30px;
+    color: white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  navbar {
+    display: flex;
+    gap: 20px;
+  }
+  
+  navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Grid Layout */
+  .mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  section h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  section p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .buttons button:hover {
+    background: #45a049;
+  }
+  
+  /* Right Side Image */
+  .image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+  /* projects css start feom here*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4CAF50;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  .back-btn {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .back-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .projects-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    text-decoration: none;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .project-card a:hover {
+    background: #45a049;
+  }
+  
+/* Services styles (moved from service.html) */
+.services-header {
+  padding: 30px;
+  text-align: center;
+}
+
+.services-container {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  padding: 0 20px 40px;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.service-card h3 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.service-card .cta {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Responsive rules */
+@media (max-width: 900px) {
+  .mainContent {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .image img {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+
+  section h1 {
+    font-size: 28px;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding: 12px;
+  }
+
+  .logo img {
+    width: 36px;
+    height: 36px;
+  }
+
+  navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .buttons button {
+    margin: 6px 0;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    padding: 0 12px 30px;
+  }
+
+  .service-card {
+    padding: 16px;
+  }
+}
+  

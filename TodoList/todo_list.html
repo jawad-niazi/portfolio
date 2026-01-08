@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        /* Optional styling for better display */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Todo Lists</h1>
+    <br>
+    <label for="newTask">New tasks</label><br>
+    <input type="text" id="newTask" placeholder="Add new task">
+    <button id="btn">Add Task</button>
+
+    <ul id="taskDisplay"></ul><br>
+
+    <button id="clrBtn">Remove Task</button>
+    <script src="todo_list.js"></script>
+
+</body>
+</html>

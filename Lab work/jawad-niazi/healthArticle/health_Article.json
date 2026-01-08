@@ -1,0 +1,34 @@
+{
+    "articles": [
+      {
+        "title": "The Benefits of Drinking Water",
+        "description": "Drinking water is essential for overall health.",
+        "ways_to_achieve": [
+          "Drink at least 8 glasses of water daily",
+          "Carry a water bottle",
+          "Eat water-rich foods like cucumbers and watermelon"
+        ],
+        "benefits": [
+          "Keeps you hydrated",
+          "Boosts skin health",
+          "Aids digestion",
+          "Flushes out toxins"
+        ]
+      },
+      {
+        "title": "Healthy Eating Habits",
+        "description": "Eating a balanced diet improves well-being.",
+        "ways_to_achieve": [
+          "Eat more fruits and vegetables",
+          "Reduce sugar intake",
+          "Choose whole grains"
+        ],
+        "benefits": [
+          "Boosts energy levels",
+          "Strengthens the immune system",
+          "Helps maintain a healthy weight"
+        ]
+      }
+    ]
+  }
+  

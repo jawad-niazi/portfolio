@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #1e1e1e;
+      --secondary-color: #ffffff;
+      --accent-color: #00adb5;
+      --background-color: #121212;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--secondary-color);
+      scroll-behavior: smooth; /* Smooth scrolling */
+    }
+
+    header {
+      background-color: var(--primary-color);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: var(--accent-color);
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .hero {
+      background-image: url('https://via.placeholder.com/1200x400');
+      background-size: cover;
+      background-position: center;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: var(--secondary-color);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      color: var(--accent-color);
+      margin-bottom: 2rem;
+    }
+
+    .project {
+      background-color: var(--primary-color);
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .project h3 {
+      margin-top: 1rem;
+      color: var(--secondary-color);
+    }
+
+    .project p {
+      color: var(--secondary-color);
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      margin: 0;
+      color: var(--secondary-color);
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Frontend Developer | Aspiring Full Stack Engineer</h2>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate Frontend Developer skilled in HTML, CSS, and JavaScript. I'm currently expanding my expertise to become a Full Stack Developer with React and Node.js.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="https://via.placeholder.com/800x400" alt="Project 1 Screenshot">
+      <h3>To-Do List App</h3>
+      <p>A clean and interactive task manager built using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project">
+      <img src="https://via.placeholder.com/800x400" alt="Project 2 Screenshot">
+      <h3>Responsive Portfolio Website</h3>
+      <p>This stunning portfolio is designed to impress clients and employers.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>My Services</h2>
+    <ul>
+      <li>Responsive Website Design</li>
+      <li>Single Page Applications with JavaScript</li>
+      <li>Landing Pages for Businesses</li>
+      <li>Website Optimization and Maintenance</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: yourname@example.com</p>
+    <p>LinkedIn: <a href="#" style="color: var(--accent-color);">Visit my LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

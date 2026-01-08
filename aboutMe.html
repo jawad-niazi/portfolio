@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto 1fr auto;
+      height: 100vh;
+      gap: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    header {
+      grid-area: header;
+      display: flex;
+      justify-content: space-between;
+      background: #4CAF50;
+      padding: 10px;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    aside {
+      grid-area: sidebar;
+      background: #f4f4f4;
+      padding: 10px;
+    }
+
+    main {
+      grid-area: main;
+      background: #eaeaea;
+      padding: 10px;
+    }
+
+    footer {
+      grid-area: footer;
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <header>About Me
+      <a href="index.html" class="back-btn">← Back to Home</a>
+    </header>
+    <aside><p>Contact and Social</p>
+        <ul><li> <a href="https://github.com/jawad-niazi">My Github profile</a></li>
+          <li> <a href="https://www.linkedin.com/in/jawad-khan-niazi-882481356?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">My LinkedIn</a></li>
+          <li> <a href="https://github.com/jawad-niazi">My Github profile</a></li></ul>   
+    
+    
+    </aside>
+    <main>I'm a front-end web developer with a passion for building clean, responsive, and user-friendly websites. I enjoy turning ideas into functional and visually appealing digital experiences that work well across all devices.
+
+      Currently, my focus is on creating engaging user interfaces using HTML, CSS, and JavaScript. I'm always exploring new technologies and improving my skills to deliver the best possible user experience.
+      
+      My long-term goal is to become a full-stack developer. I'm actively learning backend technologies so I can build complete applications—from the user interface to the server and database.</main>
+    <footer><a href="contact Me">contact Me</a></footer> 
+  </div>
+</body>
+</html>

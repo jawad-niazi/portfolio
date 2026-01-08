@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="date" id="date">
+        <button id="btn">submit</button>
+    </div>
+    <div  id="result" ></div>
+<script >
+document.getElementById('btn').addEventListener('onClick',()=>{
+    const date=new date(document.getElementById('date').value);
+    let today=new date();
+    if(date==""){
+        alert("please Enter your age to proceed");
+    }else if(date>today){
+        alert('please Enter correct age');
+
+    }
+}
+)
+    
+</script>
+</body>
+</html>
